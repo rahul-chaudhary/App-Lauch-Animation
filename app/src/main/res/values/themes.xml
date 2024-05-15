@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AppLauchLoader" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.AppLauchLoader" parent="Base.Theme.AppLauchLoader" />
+
+    <style name="MySubtitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/subtitle_text_color</item>
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/gray_shade_9</item>
+        <item name="android:textSize">@dimen/medium_txt_size</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+</resources>

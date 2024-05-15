@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AppLauchLoader</string>
+    <string name="launch_loader_animation">Launch Loader Animation</string>
+</resources>
