@@ -66,7 +66,9 @@
     <com.example.applauchloader.LoaderAnimationActivity
         android:id="@+id/loadingAnimView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintWidth_percent="1.1"
         app:layout_constraintEnd_toEndOf="@id/verticalGuideline2"
         app:layout_constraintStart_toStartOf="@id/verticalGuideline1"
         app:layout_constraintTop_toBottomOf="@id/BottomFirstView"
@@ -92,7 +94,9 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/secondBottomView"
         app:layout_constraintStart_toStartOf="@id/verticalGuideline1"
-        app:layout_constraintWidth_percent="0.13" />
+        app:layout_constraintHeight_percent="0.075"
+
+        />
 
     <View
         android:id="@+id/secondBottomView"
@@ -103,17 +107,18 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/thirdBottomView"
         app:layout_constraintStart_toEndOf="@id/firstBottomView"
-        app:layout_constraintWidth_percent="0.13" />
+        app:layout_constraintHeight_percent="0.075"
+        />
     <View
         android:id="@+id/thirdBottomView"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="0dp"
         android:background="@drawable/grey_cylinder"
         app:layout_constraintBottom_toBottomOf="@id/horizontalGuideline1"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/fourthBottomView"
         app:layout_constraintStart_toEndOf="@id/secondBottomView"
-        app:layout_constraintWidth_percent="0.13" />
+        app:layout_constraintHeight_percent="0.1" />
     <View
         android:id="@+id/fourthBottomView"
         android:layout_width="0dp"
@@ -123,7 +128,8 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/fifthBottomView"
         app:layout_constraintStart_toEndOf="@id/thirdBottomView"
-        app:layout_constraintWidth_percent="0.13" />
+        app:layout_constraintHeight_percent="0.075"
+        />
     <View
         android:id="@+id/fifthBottomView"
         android:layout_width="0dp"
@@ -133,6 +139,7 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="@id/verticalGuideline2"
         app:layout_constraintStart_toEndOf="@id/fourthBottomView"
-        app:layout_constraintWidth_percent="0.13" />
+        app:layout_constraintHeight_percent="0.075"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
