@@ -82,89 +82,88 @@ class LoaderAnimationActivity : LinearLayout {
     ) {
         if (stopAnimation) return
 
-         val animInterpolator = AccelerateDecelerateInterpolator()
-            var lastPos = 380f - 38f
-            var movingIVObjAnimator =
-                ObjectAnimator.ofFloat(binding.movingIV, "translationX", 0f, lastPos).apply {
-                    duration = 1000
-                    interpolator = animInterpolator
-                    repeatCount = INFINITE
-                    repeatMode = REVERSE
-                    start()
-                }
-
-            val firstIVObjAnimatorX = ObjectAnimator.ofFloat(binding.firstIV, "scaleX", 1f, 0.5f).apply {
-                duration = 1000
-                interpolator = animInterpolator
-                repeatCount = INFINITE
-                repeatMode = REVERSE
-                start()
-            }
-            val firstIVObjAnimatorY = ObjectAnimator.ofFloat(binding.firstIV, "scaleY", 1f, 0.5f).apply {
-                duration = 1000
-                interpolator = animInterpolator
-                repeatCount = INFINITE
-                repeatMode = REVERSE
-                start()
-
-            }
-            val secondIVObjAnimatorX = ObjectAnimator.ofFloat(binding.secondIV, "scaleX", 0.5f, 1f).apply {
-                duration = 1000
-                interpolator = animInterpolator
-                repeatCount = INFINITE
-                repeatMode = REVERSE
-                start()
-            }
-            val secondIVObjAnimatorY = ObjectAnimator.ofFloat(binding.secondIV, "scaleY", 0.5f, 1f).apply {
-                duration = 1000
-                interpolator = animInterpolator
-                repeatCount = INFINITE
-                repeatMode = REVERSE
-                start()
-            }
-
-
-
-            val thirdIVObjAnimatorX = ObjectAnimator.ofFloat(binding.thirdIV, "scaleX", 0.5f, 1f).apply {
-                duration = 1000
-                interpolator = animInterpolator
-                repeatCount = INFINITE
-                repeatMode = REVERSE
-                start()
-            }
-            val thirdIVObjAnimatorY = ObjectAnimator.ofFloat(binding.thirdIV, "scaleY", 0.5f, 1f).apply {
-                duration = 1000
-                interpolator = AccelerateDecelerateInterpolator()
-                repeatCount = INFINITE
-                repeatMode = REVERSE
-                start()
-            }
-
-        val bookTVObjAnimator = ObjectAnimator.ofFloat(binding.bookTV, "alpha",  0.5f, 1f).apply {
-            duration = 1000
-            interpolator = animInterpolator
-            repeatCount = INFINITE
-            repeatMode = REVERSE
-            start()
-        }
-
-        val eatTVObjAnimator = ObjectAnimator.ofFloat(binding.eatTV, "alpha",  0.5f, 1f).apply {
-            duration = 1000
-            interpolator = animInterpolator
-            repeatCount = INFINITE
-            repeatMode = REVERSE
-            start()
-        }
-
-        val saveTVObjAnimator = ObjectAnimator.ofFloat(binding.saveTV, "alpha",  0.5f, 1f).apply {
-            duration = 1000
-            interpolator = animInterpolator
-            repeatCount = INFINITE
-            repeatMode = REVERSE
-            start()
-        }
-
-
+//        val animInterpolator = AccelerateDecelerateInterpolator()
+//        var lastPos = 380f - 38f
+//        var movingIVObjAnimator =
+//            ObjectAnimator.ofFloat(binding.movingIV, "translationX", 0f, lastPos).apply {
+//                duration = 1000
+//                interpolator = animInterpolator
+//                repeatCount = INFINITE
+//                repeatMode = REVERSE
+//                start()
+//            }
+//
+//        val firstIVObjAnimatorX =
+//            ObjectAnimator.ofFloat(binding.firstIV, "scaleX", 1f, 0.5f).apply {
+//                duration = 1000
+//                interpolator = animInterpolator
+//                repeatCount = INFINITE
+//                repeatMode = REVERSE
+//                start()
+//            }
+//        val firstIVObjAnimatorY =
+//            ObjectAnimator.ofFloat(binding.firstIV, "scaleY", 1f, 0.5f).apply {
+//                duration = 1000
+//                interpolator = animInterpolator
+//                repeatCount = INFINITE
+//                repeatMode = REVERSE
+//                start()
+//
+//            }
+//        val secondIVObjAnimatorX =
+//            ObjectAnimator.ofFloat(binding.secondIV, "scaleX", 0.5f, 1f).apply {
+//                duration = 1000
+//                interpolator = animInterpolator
+//                repeatCount = INFINITE
+//                repeatMode = REVERSE
+//                start()
+//            }
+//        val secondIVObjAnimatorY =
+//            ObjectAnimator.ofFloat(binding.secondIV, "scaleY", 0.5f, 1f).apply {
+//                duration = 1000
+//                interpolator = animInterpolator
+//                repeatCount = INFINITE
+//                repeatMode = REVERSE
+//                start()
+//            }
+//        val thirdIVObjAnimatorX =
+//            ObjectAnimator.ofFloat(binding.thirdIV, "scaleX", 0.5f, 1f).apply {
+//                duration = 1000
+//                interpolator = animInterpolator
+//                repeatCount = INFINITE
+//                repeatMode = REVERSE
+//                start()
+//            }
+//        val thirdIVObjAnimatorY =
+//            ObjectAnimator.ofFloat(binding.thirdIV, "scaleY", 0.5f, 1f).apply {
+//                duration = 1000
+//                interpolator = AccelerateDecelerateInterpolator()
+//                repeatCount = INFINITE
+//                repeatMode = REVERSE
+//                start()
+//            }
+//
+//        val bookTVObjAnimator = ObjectAnimator.ofFloat(binding.bookTV, "alpha", 0.5f, 1f).apply {
+//            duration = 1000
+//            interpolator = animInterpolator
+//            repeatCount = INFINITE
+//            repeatMode = REVERSE
+//            start()
+//        }
+//        val eatTVObjAnimator = ObjectAnimator.ofFloat(binding.eatTV, "alpha", 0.5f, 1f).apply {
+//            duration = 1000
+//            interpolator = animInterpolator
+//            repeatCount = INFINITE
+//            repeatMode = REVERSE
+//            start()
+//        }
+//        val saveTVObjAnimator = ObjectAnimator.ofFloat(binding.saveTV, "alpha", 0.5f, 1f).apply {
+//            duration = 1000
+//            interpolator = animInterpolator
+//            repeatCount = INFINITE
+//            repeatMode = REVERSE
+//            start()
+//        }
 
 
     }
