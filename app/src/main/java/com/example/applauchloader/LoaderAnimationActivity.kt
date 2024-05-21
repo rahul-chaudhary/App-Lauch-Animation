@@ -3,24 +3,17 @@ package com.example.applauchloader
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator.INFINITE
 import android.animation.ValueAnimator.REVERSE
+import android.animation.ValueAnimator.setFrameDelay
 import android.content.Context
-import android.graphics.Color
 import android.util.AttributeSet
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.AnticipateInterpolator
-import android.view.animation.BounceInterpolator
-import android.view.animation.DecelerateInterpolator
-import android.view.animation.OvershootInterpolator
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.appcompat.widget.AppCompatTextView
 import com.example.applauchloader.databinding.ActivityLoaderAnimationBinding
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.delay
+
 
 class LoaderAnimationActivity : LinearLayout {
     private lateinit var binding: ActivityLoaderAnimationBinding
@@ -50,12 +43,6 @@ class LoaderAnimationActivity : LinearLayout {
     private fun init() {
         binding = ActivityLoaderAnimationBinding.inflate(LayoutInflater.from(context))
         addView(binding.root, LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT))
-
-//        binding.secondIV.scaleX = .5f
-//        binding.secondIV.scaleY = .5f
-//        binding.thirdIV.scaleX = .5f
-//        binding.thirdIV.scaleY = .5f
-//        binding.bookTV.setTextColor(Color.BLACK)
     }
 
     fun startAnimation() {
@@ -67,6 +54,7 @@ class LoaderAnimationActivity : LinearLayout {
             binding.bookTV,
             binding.eatTV,
             binding.saveTV,
+            binding.movingIV,
             0f
         )
     }
@@ -78,14 +66,16 @@ class LoaderAnimationActivity : LinearLayout {
         bookTV: AppCompatTextView,
         eatTV: AppCompatTextView,
         saveTV: AppCompatTextView,
+        movingIV: ImageView,
         initialX: Float
     ) {
         if (stopAnimation) return
 
          val animInterpolator = AccelerateDecelerateInterpolator()
-            var lastPos = 380f - 38f
+            val lastPos = 380f
             var movingIVObjAnimator =
-                ObjectAnimator.ofFloat(binding.movingIV, "translationX", 0f, lastPos).apply {
+                ObjectAnimator.ofFloat(binding.movingIV, "translationX", secondIV.x.toFloat(), lastPos).apply {
+                    startDelay = 400
                     duration = 1000
                     interpolator = animInterpolator
                     repeatCount = INFINITE
@@ -98,6 +88,8 @@ class LoaderAnimationActivity : LinearLayout {
                 interpolator = animInterpolator
                 repeatCount = INFINITE
                 repeatMode = REVERSE
+//                movingIV.x = secondIV.x
+//                startDelay = 400
                 start()
             }
             val firstIVObjAnimatorY = ObjectAnimator.ofFloat(binding.firstIV, "scaleY", 1f, 0.5f).apply {
