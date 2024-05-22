@@ -66,12 +66,28 @@
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="33"
                 motion:keyPositionType="deltaRelative"
-                motion:percentX=".53" />
+                motion:percentX=".56" />
             <KeyPosition
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="62"
                 motion:keyPositionType="deltaRelative"
-                motion:percentX=".53" />
+                motion:percentX=".56" />
+            <KeyAttribute
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="30"
+                android:scaleX="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="30"
+                android:scaleY="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="62"
+                android:scaleX="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="62"
+                android:scaleY="0.5" />
 
         </KeyFrameSet>
     </Transition>
