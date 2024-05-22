@@ -6,15 +6,16 @@
         motion:autoTransition="animateToEnd"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="3000"
+        motion:motionInterpolator="linear">
         <KeyFrameSet>
             <KeyAttribute
                 android:scaleX="1"
-                motion:framePosition="52"
+                motion:framePosition="50"
                 motion:motionTarget="@+id/secondIV" />
             <KeyAttribute
                 android:scaleY="1"
-                motion:framePosition="52"
+                motion:framePosition="50"
                 motion:motionTarget="@+id/secondIV" />
 
             <KeyAttribute
@@ -29,13 +30,18 @@
 
             <KeyAttribute
                 android:alpha=".5"
-                motion:framePosition="52"
+                motion:framePosition="50"
                 motion:motionTarget="@+id/bookTV" />
 
             <KeyAttribute
                 android:alpha=".5"
-                motion:framePosition="52"
+                motion:framePosition="50"
                 motion:motionTarget="@+id/saveTV" />
+
+            <KeyAttribute
+                android:alpha="1"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/eatTV" />
 
             <KeyAttribute
                 android:alpha=".5"
@@ -46,6 +52,26 @@
                 android:alpha=".5"
                 motion:framePosition="100"
                 motion:motionTarget="@+id/eatTV" />
+            <KeyPosition
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="30"
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="0" />
+            <KeyPosition
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="66"
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="1.0" />
+            <KeyPosition
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="33"
+                motion:keyPositionType="deltaRelative"
+                motion:percentX=".53" />
+            <KeyPosition
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="62"
+                motion:keyPositionType="deltaRelative"
+                motion:percentX=".53" />
 
         </KeyFrameSet>
     </Transition>
