@@ -6,7 +6,7 @@
         motion:autoTransition="animateToEnd"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="3000"
+        motion:duration="2000"
         motion:motionInterpolator="linear">
         <KeyFrameSet>
             <KeyAttribute
@@ -88,6 +88,14 @@
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="62"
                 android:scaleY="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="90"
+                android:scaleX="1"
+                android:scaleY="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/thirdIV"
+                android:scaleY="1.2" />
 
         </KeyFrameSet>
     </Transition>

@@ -21,7 +21,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent=".82" />
+            app:layout_constraintGuide_percent=".83" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/firstVerticalGL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".33"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/secondVerticalGL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".51"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/thirdVerticalGL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".66"
+            />
 
 
         <ImageView
@@ -95,9 +117,10 @@
             android:text="Book"
             android:textColor="@color/black_shade"
             android:textSize="@dimen/sp_20"
-            app:layout_constraintEnd_toEndOf="@+id/firstIV"
-            app:layout_constraintStart_toStartOf="@id/firstIV"
-            app:layout_constraintTop_toBottomOf="@id/bottomGuideline" />
+            app:layout_constraintTop_toBottomOf="@id/bottomGuideline"
+            app:layout_constraintStart_toStartOf="@id/firstVerticalGL"
+            app:layout_constraintEnd_toEndOf="@id/firstVerticalGL"
+            />
 
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -108,10 +131,9 @@
             android:text="Eat"
             android:textColor="@color/black_shade"
             android:textSize="@dimen/sp_20"
-            app:layout_constraintEnd_toEndOf="@id/secondIV"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@id/secondIV"
-
+            app:layout_constraintStart_toStartOf="@id/secondVerticalGL"
+            app:layout_constraintEnd_toEndOf="@id/secondVerticalGL"
             app:layout_constraintTop_toBottomOf="@id/bottomGuideline" />
 
 
@@ -123,9 +145,10 @@
             android:text="Save"
             android:textColor="@color/black_shade"
             android:textSize="@dimen/sp_20"
-            app:layout_constraintEnd_toEndOf="@id/thirdIV"
-            app:layout_constraintStart_toStartOf="@id/thirdIV"
-            app:layout_constraintTop_toBottomOf="@id/bottomGuideline" />
+            app:layout_constraintTop_toBottomOf="@id/bottomGuideline"
+            app:layout_constraintStart_toStartOf="@id/thirdVerticalGL"
+            app:layout_constraintEnd_toEndOf="@id/thirdVerticalGL"
+            />
 
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
