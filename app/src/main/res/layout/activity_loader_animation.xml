@@ -130,7 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Eat"
+            android:text="-   Eat   -"
             android:textColor="@color/black_shade"
             android:textSize="@dimen/sp_20"
             app:layout_constraintEnd_toEndOf="@id/secondVerticalGL"

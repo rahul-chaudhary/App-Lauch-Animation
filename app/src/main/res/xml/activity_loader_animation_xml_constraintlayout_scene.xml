@@ -6,7 +6,7 @@
         motion:autoTransition="animateToEnd"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="2000"
+        motion:duration="1200"
         motion:motionInterpolator="linear">
         <KeyFrameSet>
 
@@ -87,6 +87,40 @@
                 android:scaleY="1"
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="100" />
+            <KeyAttribute
+                motion:motionTarget="@+id/bookTV"
+                motion:framePosition="39"
+                android:alpha="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/bookTV"
+                motion:framePosition="40"
+                android:alpha="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/eatTV"
+                motion:framePosition="0"
+                android:alpha="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/saveTV"
+                motion:framePosition="0"
+                android:alpha="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/bookTV"
+                motion:framePosition="100"
+                android:alpha="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/eatTV" />
+            <KeyAttribute
+                motion:motionTarget="@+id/eatTV"
+                motion:framePosition="40"
+                android:alpha="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/eatTV"
+                motion:framePosition="79"
+                android:alpha="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/eatTV"
+                motion:framePosition="100"
+                android:alpha="0.5" />
         </KeyFrameSet>
     </Transition>
 
