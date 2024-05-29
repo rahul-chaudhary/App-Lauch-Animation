@@ -43,21 +43,28 @@ class LoaderAnimationActivity : LinearLayout {
 
 
         binding.motionLayout.transitionToStart()
-        var looped = false
-
         binding.motionLayout.setTransitionListener(object : MotionLayout.TransitionListener {
-            override fun onTransitionStarted(motionLayout: MotionLayout, i: Int, i1: Int) {
+            override fun onTransitionStarted(motionLayout: MotionLayout, startId: Int, endId: Int) {
+                // No-op
             }
 
-            override fun onTransitionChange(motionLayout: MotionLayout, i: Int, i1: Int, v: Float) {
+            override fun onTransitionChange(motionLayout: MotionLayout, startId: Int, endId: Int, progress: Float) {
+                // No-op
             }
 
-            override fun onTransitionCompleted(motionLayout: MotionLayout, i: Int) {
-
-                if (!looped) motionLayout.transitionToStart()
-                else motionLayout.transitionToEnd()
-
-                looped = !looped
+            override fun onTransitionCompleted(motionLayout: MotionLayout, currentId: Int) {
+                if (currentId == motionLayout.endState) {
+                    // When the transition to the end is completed, start the transition back to start
+                    motionLayout.post {
+//                        motionLayout.transitionToStart()
+                        motionLayout.progress = 0f
+                    }
+                } else if (currentId == motionLayout.startState) {
+                    // When the transition to the start is completed, start the transition to end
+                    motionLayout.post {
+//                        motionLayout.transitionToStart()
+                    }
+                }
             }
 
             override fun onTransitionTrigger(
@@ -93,8 +100,6 @@ class LoaderAnimationActivity : LinearLayout {
         initialX: Float
     ) {
         if (stopAnimation) return
-
-
 
     }
 
