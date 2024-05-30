@@ -24,12 +24,12 @@
                 motion:percentX=".96" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
-                motion:percentX=".48"
+                motion:percentX=".49"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="45" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
-                motion:percentX=".50"
+                motion:percentX=".49"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="30" />
             <KeyAttribute
@@ -84,7 +84,7 @@
                 motion:framePosition="75" />
             <KeyAttribute
                 motion:motionTarget="@+id/bookTV"
-                motion:framePosition="31"
+                motion:framePosition="29"
                 android:alpha="1" />
             <KeyAttribute
                 motion:motionTarget="@+id/bookTV"
@@ -111,10 +111,6 @@
             <KeyAttribute
                 motion:motionTarget="@+id/eatTV"
                 motion:framePosition="60"
-                android:alpha="1" />
-            <KeyAttribute
-                motion:motionTarget="@+id/eatTV"
-                motion:framePosition="90"
                 android:alpha="0.5" />
             <KeyPosition
                 motion:keyPositionType="pathRelative"
@@ -209,6 +205,44 @@
                 android:elevation="16dp"
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="74" />
+            <KeyAttribute
+                motion:motionTarget="@+id/eatTV"
+                motion:framePosition="59"
+                android:alpha="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/saveTV"
+                motion:framePosition="59"
+                android:alpha="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/saveTV"
+                motion:framePosition="60"
+                android:alpha="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/saveTV"
+                motion:framePosition="85"
+                android:alpha="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/eatTV"
+                motion:framePosition="100"
+                android:alpha="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/eatTV"
+                motion:framePosition="29"
+                android:alpha="0.5" />
+            <KeyAttribute
+                motion:motionTarget="@+id/saveTV"
+                motion:framePosition="100"
+                android:alpha="0.5" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX=".47"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="38" />
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentX=".95"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="69" />
 
         </KeyFrameSet>
     </Transition>
