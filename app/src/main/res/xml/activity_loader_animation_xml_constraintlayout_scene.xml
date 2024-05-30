@@ -35,16 +35,16 @@
             <KeyAttribute
                 motion:motionTarget="@+id/firstIV"
                 motion:framePosition="30"
-                android:scaleX="0.9"
-                android:scaleY="0.9" />
+                android:scaleX="0.8"
+                android:scaleY="0.8" />
             <KeyAttribute
                 motion:motionTarget="@+id/firstIV"
                 motion:framePosition="15"
                 android:scaleX="1"
                 android:scaleY="1" />
             <KeyAttribute
-                android:scaleX="0.9"
-                android:scaleY="0.9"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
                 motion:motionTarget="@+id/firstIV"
                 motion:framePosition="90" />
             <KeyAttribute
@@ -58,35 +58,30 @@
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="45" />
             <KeyAttribute
-                android:scaleX="0.9"
-                android:scaleY="0.9"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="75" />
             <KeyAttribute
-                android:scaleX="0.9"
-                android:scaleY="0.9"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="90" />
             <KeyAttribute
-                android:scaleX="0.9"
-                android:scaleY="0.9"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="15" />
             <KeyAttribute
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="45"
-                android:scaleX="0.9"
-                android:scaleY="0.9" />
+                android:scaleX="0.8"
+                android:scaleY="0.8" />
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="75" />
-            <KeyAttribute
-                android:scaleX="1"
-                android:scaleY="1"
-                motion:motionTarget="@+id/thirdIV"
-                motion:framePosition="90" />
             <KeyAttribute
                 motion:motionTarget="@+id/bookTV"
                 motion:framePosition="31"
@@ -181,6 +176,39 @@
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="60"
                 android:translationX="-8dp" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="-0.01"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="97" />
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:motionTarget="@+id/firstIV"
+                motion:framePosition="97" />
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="26" />
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="57" />
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="96" />
+            <KeyAttribute
+                android:elevation="16dp"
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="86" />
+            <KeyAttribute
+                android:elevation="16dp"
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="74" />
 
         </KeyFrameSet>
     </Transition>
