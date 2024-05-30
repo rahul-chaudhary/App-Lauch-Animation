@@ -6,7 +6,7 @@
         motion:autoTransition="animateToEnd"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="4000"
+        motion:duration="3000"
         motion:motionInterpolator="linear">
         <KeyFrameSet>
 
@@ -35,16 +35,16 @@
             <KeyAttribute
                 motion:motionTarget="@+id/firstIV"
                 motion:framePosition="30"
-                android:scaleX="0.8"
-                android:scaleY="0.8" />
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
             <KeyAttribute
                 motion:motionTarget="@+id/firstIV"
                 motion:framePosition="15"
                 android:scaleX="1"
                 android:scaleY="1" />
             <KeyAttribute
-                android:scaleX="0.8"
-                android:scaleY="0.8"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
                 motion:motionTarget="@+id/firstIV"
                 motion:framePosition="90" />
             <KeyAttribute
@@ -58,25 +58,25 @@
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="45" />
             <KeyAttribute
-                android:scaleX="0.8"
-                android:scaleY="0.8"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="75" />
             <KeyAttribute
-                android:scaleX="0.8"
-                android:scaleY="0.8"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="90" />
             <KeyAttribute
-                android:scaleX="0.8"
-                android:scaleY="0.8"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="15" />
             <KeyAttribute
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="45"
-                android:scaleX="0.8"
-                android:scaleY="0.8" />
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
@@ -119,7 +119,7 @@
                 motion:framePosition="75" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
-                motion:percentX="0"
+                motion:percentX="0.01"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="100" />
             <KeyPosition
@@ -133,7 +133,7 @@
                 motion:framePosition="0" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
-                motion:percentX="0.01"
+                motion:percentX="0"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="99" />
             <KeyAttribute
@@ -193,8 +193,8 @@
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="57" />
             <KeyAttribute
-                android:scaleX="0.8"
-                android:scaleY="0.8"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="96" />
             <KeyAttribute
@@ -243,6 +243,14 @@
                 motion:percentX=".95"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="69" />
+            <KeyAttribute
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="97"
+                android:translationX="0dp" />
+            <KeyAttribute
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="97"
+                android:translationX="0dp" />
 
         </KeyFrameSet>
     </Transition>
