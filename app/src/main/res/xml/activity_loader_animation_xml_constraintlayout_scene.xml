@@ -6,7 +6,7 @@
         motion:autoTransition="animateToEnd"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="3000"
+        motion:duration="4000"
         motion:motionInterpolator="linear">
         <KeyFrameSet>
 
@@ -176,7 +176,7 @@
                 motion:keyPositionType="deltaRelative"
                 motion:percentX="-0.02"
                 motion:motionTarget="@+id/movingIV"
-                motion:framePosition="97" />
+                motion:framePosition="95" />
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
