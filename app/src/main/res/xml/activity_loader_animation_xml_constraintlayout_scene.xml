@@ -251,6 +251,11 @@
                 motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="97"
                 android:translationX="0dp" />
+            <KeyAttribute
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="61" />
 
         </KeyFrameSet>
     </Transition>
@@ -261,10 +266,10 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:elevation="15dp"
-            android:scaleX="1.3"
-            android:scaleY="1.3"
-            android:layout_marginTop="-2dp"
-            android:layout_marginStart="-2dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="-1dp"
             motion:layout_constraintDimensionRatio="1:1"
             motion:layout_constraintStart_toStartOf="@id/firstIV"
             motion:layout_constraintTop_toTopOf="@id/firstIV"
@@ -306,10 +311,10 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:elevation="15dp"
-            android:scaleX="1.3"
-            android:scaleY="1.3"
-            android:layout_marginTop="-2dp"
-            android:layout_marginStart="-2dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="-1dp"
             motion:layout_constraintDimensionRatio="1:1"
             motion:layout_constraintStart_toStartOf="@id/thirdIV"
             motion:layout_constraintTop_toTopOf="@id/thirdIV"
