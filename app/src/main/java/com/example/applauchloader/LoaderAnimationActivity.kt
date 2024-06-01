@@ -40,7 +40,6 @@ class LoaderAnimationActivity : LinearLayout {
         addView(binding.root, LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT))
 
 
-
         binding.motionLayout.transitionToStart()
         binding.motionLayout.setTransitionListener(object : MotionLayout.TransitionListener {
             override fun onTransitionStarted(motionLayout: MotionLayout, startId: Int, endId: Int) {

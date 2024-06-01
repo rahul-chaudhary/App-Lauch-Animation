@@ -6,8 +6,8 @@
         motion:autoTransition="animateToEnd"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="4000"
-        motion:motionInterpolator="linear">
+        motion:duration="3000"
+        motion:motionInterpolator="easeOut">
         <KeyFrameSet>
 
 
@@ -15,7 +15,7 @@
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="5"
                 motion:keyPositionType="deltaRelative"
-                motion:percentX="0.01" />
+                motion:percentX="0" />
 
             <KeyPosition
                 motion:motionTarget="@+id/movingIV"
@@ -24,12 +24,12 @@
                 motion:percentX=".97" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
-                motion:percentX=".48"
+                motion:percentX=".478"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="48" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
-                motion:percentX=".50"
+                motion:percentX=".49"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="32" />
             <KeyAttribute
@@ -114,23 +114,13 @@
                 android:alpha="0.5" />
             <KeyPosition
                 motion:keyPositionType="pathRelative"
-                motion:percentX=".95"
+                motion:percentX=".952"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="83" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
                 motion:percentX="0"
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="100" />
-            <KeyPosition
-                motion:keyPositionType="deltaRelative"
-                motion:percentX="0"
                 motion:motionTarget="@+id/movingIV" />
-            <KeyPosition
-                motion:keyPositionType="deltaRelative"
-                motion:percentX="-0.001"
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="99" />
             <KeyAttribute
                 motion:motionTarget="@+id/firstIV"
                 motion:framePosition="30"
@@ -225,12 +215,12 @@
                 android:alpha="0.5" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
-                motion:percentX=".48"
+                motion:percentX=".478"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="37" />
             <KeyPosition
                 motion:keyPositionType="pathRelative"
-                motion:percentX=".95"
+                motion:percentX=".952"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="63" />
             <KeyAttribute
@@ -248,7 +238,7 @@
                 motion:framePosition="62" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
-                motion:percentX="0.01"
+                motion:percentX="0"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="14" />
             <KeyAttribute
@@ -259,6 +249,26 @@
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="62"
                 android:translationX="-16dp" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="-0.02"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="0" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="0"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="100" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="-0.01"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="99" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="-0.02"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="1" />
 
         </KeyFrameSet>
     </Transition>
@@ -271,8 +281,8 @@
             android:elevation="15dp"
             android:scaleX="1.2"
             android:scaleY="1.2"
-            android:layout_marginStart="-5dp"
             android:layout_marginTop="-1dp"
+            android:layout_marginStart="-1dp"
             motion:layout_constraintDimensionRatio="1:1"
             motion:layout_constraintStart_toStartOf="@id/firstIV"
             motion:layout_constraintTop_toTopOf="@id/firstIV"
@@ -288,8 +298,8 @@
             android:elevation="15dp"
             android:scaleX="1.2"
             android:scaleY="1.2"
-            android:layout_marginStart="-1dp"
             android:layout_marginTop="-1dp"
+            android:layout_marginStart="-1dp"
             motion:layout_constraintDimensionRatio="1:1"
             motion:layout_constraintStart_toStartOf="@id/thirdIV"
             motion:layout_constraintTop_toTopOf="@id/thirdIV"
