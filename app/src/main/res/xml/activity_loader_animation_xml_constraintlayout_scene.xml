@@ -6,8 +6,8 @@
         motion:autoTransition="animateToEnd"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="3000"
-        motion:motionInterpolator="easeOut">
+        motion:duration="2800"
+        motion:motionInterpolator="cubic(0,0,0.21,0.68)">
         <KeyFrameSet>
 
 
