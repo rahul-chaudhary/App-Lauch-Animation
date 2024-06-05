@@ -12,14 +12,12 @@
 
             <KeyAttribute
 
-                motion:translationX="-0.02"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="0"
                 android:translationX="0dp" />
 
             <KeyAttribute
 
-                motion:translationX="-0.02"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="1"
                 android:translationX="0dp" />
@@ -27,33 +25,28 @@
             <KeyAttribute
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="5"
-                motion:translationX="0"
                 android:translationX="0dp" />
 
             <KeyAttribute
 
-                motion:translationX="0"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="14"
                 android:translationX="56dp" />
 
             <KeyAttribute
 
-                motion:translationX=".49"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="32"
                 android:translationX="55dp" />
 
             <KeyAttribute
 
-                motion:translationX=".478dp"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="37"
                 android:translationX="55dp" />
 
             <KeyAttribute
 
-                motion:translationX=".478dp"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="48"
                 android:translationX="70dp" />
@@ -61,12 +54,10 @@
             <KeyAttribute
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="59"
-                motion:translationX=".97dp"
                 android:translationX="80dp" />
 
             <KeyAttribute
 
-                motion:translationX=".952dp"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="63"
                 android:translationX="90dp" />
@@ -74,7 +65,6 @@
 
             <KeyAttribute
 
-                motion:translationX=".952dp"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="83"
                 android:translationX="100dp" />
@@ -82,7 +72,6 @@
 
             <KeyAttribute
 
-                motion:translationX="-0.01dp"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="99"
                 android:translationX="110dp" />
@@ -90,7 +79,6 @@
 
             <KeyAttribute
 
-                motion:translationX="-0.001dp"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="100"
                 android:translationX="130dp" />
