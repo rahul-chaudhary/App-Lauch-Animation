@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.applauchloader.databinding.ActivityMainBinding
+import kotlinx.coroutines.delay
 
 class MainActivity : AppCompatActivity() {
     private lateinit var mbinding: ActivityMainBinding
@@ -17,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(mbinding.root)
 
         mbinding.loadingAnimView.startAnimation()
+
+
 
     }
 }

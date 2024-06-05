@@ -37,9 +37,23 @@ class LoaderAnimationActivity : LinearLayout {
 
     private fun init() {
         binding = ActivityLoaderAnimationBinding.inflate(LayoutInflater.from(context))
+
+
+
+    }
+
+    fun startAnimation() {
+        stopAnimation = false
+        animViews()
+    }
+    fun stopAnimation() {
+        stopAnimation = true
+    }
+
+    private fun animViews() {
+        if (stopAnimation) return
+
         addView(binding.root, LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT))
-
-
         binding.motionLayout.transitionToStart()
         binding.motionLayout.setTransitionListener(object : MotionLayout.TransitionListener {
             override fun onTransitionStarted(motionLayout: MotionLayout, startId: Int, endId: Int) {
@@ -73,31 +87,6 @@ class LoaderAnimationActivity : LinearLayout {
             ) {
             }
         })
-    }
-
-    fun startAnimation() {
-        stopAnimation = false
-        animViews(
-            binding.firstIV,
-            binding.secondIV,
-            binding.thirdIV,
-            binding.bookTV,
-            binding.eatTV,
-            binding.saveTV,
-            0f
-        )
-    }
-
-    private fun animViews(
-        firstIV: ImageView,
-        secondIV: ImageView,
-        thirdIV: ImageView,
-        bookTV: AppCompatTextView,
-        eatTV: AppCompatTextView,
-        saveTV: AppCompatTextView,
-        initialX: Float
-    ) {
-        if (stopAnimation) return
 
     }
 
