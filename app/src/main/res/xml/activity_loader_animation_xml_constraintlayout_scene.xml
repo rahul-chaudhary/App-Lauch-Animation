@@ -10,276 +10,264 @@
         motion:motionInterpolator="cubic(0,0,0.21,0.68)">
         <KeyFrameSet>
 
-            <KeyAttribute
-
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="0"
-                android:translationX="0dp" />
-
-            <KeyAttribute
-
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="1"
-                android:translationX="0dp" />
-
-            <KeyAttribute
+            <KeyPosition
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="5"
-                android:translationX="0dp" />
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="0" />
 
-            <KeyAttribute
-
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="14"
-                android:translationX="56dp" />
-
-            <KeyAttribute
-
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="32"
-                android:translationX="55dp" />
-
-            <KeyAttribute
-
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="37"
-                android:translationX="55dp" />
-
-            <KeyAttribute
-
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="48"
-                android:translationX="70dp" />
-
-            <KeyAttribute
+            <KeyPosition
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="59"
-                android:translationX="80dp" />
-
-            <KeyAttribute
-
+                motion:keyPositionType="deltaRelative"
+                motion:percentX=".97" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX=".478"
                 motion:motionTarget="@+id/movingIV"
-                motion:framePosition="63"
-                android:translationX="90dp" />
-
-
-            <KeyAttribute
-
+                motion:framePosition="48" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX=".49"
                 motion:motionTarget="@+id/movingIV"
-                motion:framePosition="83"
-                android:translationX="100dp" />
-
-
+                motion:framePosition="32" />
             <KeyAttribute
-
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="99"
-                android:translationX="110dp" />
-
-
-            <KeyAttribute
-
-                motion:motionTarget="@+id/movingIV"
-                motion:framePosition="100"
-                android:translationX="130dp" />
-
-            <KeyAttribute
-                android:scaleX="0.7"
-                android:scaleY="0.7"
+                motion:motionTarget="@+id/firstIV"
                 motion:framePosition="30"
-                motion:motionTarget="@+id/firstIV" />
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
             <KeyAttribute
-                android:scaleX="1"
-                android:scaleY="1"
+                motion:motionTarget="@+id/firstIV"
                 motion:framePosition="15"
-                motion:motionTarget="@+id/firstIV" />
+                android:scaleX="1"
+                android:scaleY="1" />
             <KeyAttribute
                 android:scaleX="0.7"
                 android:scaleY="0.7"
-                motion:framePosition="90"
-                motion:motionTarget="@+id/firstIV" />
+                motion:motionTarget="@+id/firstIV"
+                motion:framePosition="90" />
             <KeyAttribute
-                android:scaleX="1"
-                android:scaleY="1"
+                motion:motionTarget="@+id/secondIV"
                 motion:framePosition="30"
-                motion:motionTarget="@+id/secondIV" />
+                android:scaleX="1"
+                android:scaleY="1" />
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="45" />
+            <KeyAttribute
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="75" />
+            <KeyAttribute
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="90" />
+            <KeyAttribute
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="14" />
+            <KeyAttribute
+                motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="45"
-                motion:motionTarget="@+id/secondIV" />
-            <KeyAttribute
                 android:scaleX="0.7"
-                android:scaleY="0.7"
-                motion:framePosition="75"
-                motion:motionTarget="@+id/secondIV" />
-            <KeyAttribute
-                android:scaleX="0.7"
-                android:scaleY="0.7"
-                motion:framePosition="90"
-                motion:motionTarget="@+id/secondIV" />
-            <KeyAttribute
-                android:scaleX="0.7"
-                android:scaleY="0.7"
-                motion:framePosition="14"
-                motion:motionTarget="@+id/secondIV" />
-            <KeyAttribute
-                android:scaleX="0.7"
-                android:scaleY="0.7"
-                motion:framePosition="45"
-                motion:motionTarget="@+id/thirdIV" />
+                android:scaleY="0.7" />
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="83"
-                motion:motionTarget="@+id/thirdIV" />
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="83" />
             <KeyAttribute
-                android:alpha="1"
+                motion:motionTarget="@+id/bookTV"
                 motion:framePosition="29"
-                motion:motionTarget="@+id/bookTV" />
+                android:alpha="1" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/bookTV"
                 motion:framePosition="30"
-                motion:motionTarget="@+id/bookTV" />
+                android:alpha="0.5" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/eatTV"
                 motion:framePosition="0"
-                motion:motionTarget="@+id/eatTV" />
+                android:alpha="0.5" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/saveTV"
                 motion:framePosition="0"
-                motion:motionTarget="@+id/saveTV" />
+                android:alpha="0.5" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/bookTV"
                 motion:framePosition="90"
-                motion:motionTarget="@+id/bookTV" />
-            <KeyAttribute motion:motionTarget="@+id/eatTV" />
+                android:alpha="0.5" />
             <KeyAttribute
-                android:alpha="1"
-                motion:framePosition="30"
                 motion:motionTarget="@+id/eatTV" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/eatTV"
+                motion:framePosition="30"
+                android:alpha="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/eatTV"
                 motion:framePosition="60"
-                motion:motionTarget="@+id/eatTV" />
-
+                android:alpha="0.5" />
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentX=".952"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="83" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="0"
+                motion:motionTarget="@+id/movingIV" />
             <KeyAttribute
-                android:translationX="-4dp"
+                motion:motionTarget="@+id/firstIV"
                 motion:framePosition="30"
-                motion:motionTarget="@+id/firstIV" />
+                android:translationX="-4dp" />
             <KeyAttribute
-                android:translationX="-4dp"
+                motion:motionTarget="@+id/secondIV"
                 motion:framePosition="30"
-                motion:motionTarget="@+id/secondIV" />
+                android:translationX="-4dp" />
             <KeyAttribute
-                android:translationX="-8dp"
+                motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="83"
-                motion:motionTarget="@+id/thirdIV" />
+                android:translationX="-8dp" />
             <KeyAttribute
-                android:translationX="-4dp"
+                motion:motionTarget="@+id/firstIV"
                 motion:framePosition="75"
-                motion:motionTarget="@+id/firstIV" />
+                android:translationX="-4dp" />
             <KeyAttribute
-                android:translationX="-16dp"
+                motion:motionTarget="@+id/secondIV"
                 motion:framePosition="83"
-                motion:motionTarget="@+id/secondIV" />
+                android:translationX="-16dp" />
             <KeyAttribute
-                android:translationX="0dp"
+                motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/thirdIV" />
+                android:translationX="0dp" />
             <KeyAttribute
-                android:translationX="0dp"
+                motion:motionTarget="@+id/secondIV"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/secondIV" />
+                android:translationX="0dp" />
             <KeyAttribute
-                android:translationX="0dp"
+                motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="45"
-                motion:motionTarget="@+id/thirdIV" />
+                android:translationX="0dp" />
             <KeyAttribute
-                android:translationX="-8dp"
+                motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="60"
-                motion:motionTarget="@+id/thirdIV" />
+                android:translationX="-8dp" />
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="97"
-                motion:motionTarget="@+id/firstIV" />
+                motion:motionTarget="@+id/firstIV"
+                motion:framePosition="97" />
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="26"
-                motion:motionTarget="@+id/secondIV" />
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="26" />
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="57"
-                motion:motionTarget="@+id/thirdIV" />
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="57" />
             <KeyAttribute
                 android:scaleX="0.7"
                 android:scaleY="0.7"
-                motion:framePosition="96"
-                motion:motionTarget="@+id/thirdIV" />
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="96" />
             <KeyAttribute
                 android:elevation="16dp"
-                motion:framePosition="86"
-                motion:motionTarget="@+id/thirdIV" />
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="86" />
             <KeyAttribute
                 android:elevation="16dp"
-                motion:framePosition="74"
-                motion:motionTarget="@+id/thirdIV" />
+                motion:motionTarget="@+id/thirdIV"
+                motion:framePosition="74" />
             <KeyAttribute
-                android:alpha="1"
+                motion:motionTarget="@+id/eatTV"
                 motion:framePosition="59"
-                motion:motionTarget="@+id/eatTV" />
+                android:alpha="1" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/saveTV"
                 motion:framePosition="59"
-                motion:motionTarget="@+id/saveTV" />
+                android:alpha="0.5" />
             <KeyAttribute
-                android:alpha="1"
+                motion:motionTarget="@+id/saveTV"
                 motion:framePosition="60"
-                motion:motionTarget="@+id/saveTV" />
+                android:alpha="1" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/saveTV"
                 motion:framePosition="85"
-                motion:motionTarget="@+id/saveTV" />
+                android:alpha="0.5" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/eatTV"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/eatTV" />
+                android:alpha="0.5" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/eatTV"
                 motion:framePosition="29"
-                motion:motionTarget="@+id/eatTV" />
+                android:alpha="0.5" />
             <KeyAttribute
-                android:alpha="0.5"
+                motion:motionTarget="@+id/saveTV"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/saveTV" />
-
+                android:alpha="0.5" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX=".478"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="37" />
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentX=".952"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="63" />
             <KeyAttribute
-                android:translationX="0dp"
+                motion:motionTarget="@+id/secondIV"
                 motion:framePosition="97"
-                motion:motionTarget="@+id/secondIV" />
+                android:translationX="0dp" />
             <KeyAttribute
-                android:translationX="0dp"
+                motion:motionTarget="@+id/thirdIV"
                 motion:framePosition="97"
-                motion:motionTarget="@+id/thirdIV" />
+                android:translationX="0dp" />
             <KeyAttribute
                 android:scaleX="0.7"
                 android:scaleY="0.7"
-                motion:framePosition="62"
-                motion:motionTarget="@+id/secondIV" />
-
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="62" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="0"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="14" />
             <KeyAttribute
-                android:translationX="-4dp"
+                motion:motionTarget="@+id/secondIV"
                 motion:framePosition="45"
-                motion:motionTarget="@+id/secondIV" />
+                android:translationX="-4dp" />
             <KeyAttribute
-                android:translationX="-16dp"
+                motion:motionTarget="@+id/secondIV"
                 motion:framePosition="62"
-                motion:motionTarget="@+id/secondIV" />
-
-
+                android:translationX="-16dp" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="0"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="0" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="-0.001"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="100" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="-0.01"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="99" />
+            <KeyPosition
+                motion:keyPositionType="deltaRelative"
+                motion:percentX="0"
+                motion:motionTarget="@+id/movingIV"
+                motion:framePosition="1" />
 
         </KeyFrameSet>
     </Transition>
@@ -289,11 +277,11 @@
             android:id="@+id/movingIV"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="-1dp"
-            android:layout_marginTop="-1dp"
             android:elevation="15dp"
             android:scaleX="1.2"
             android:scaleY="1.2"
+            android:layout_marginTop="-1dp"
+            android:layout_marginStart="-1dp"
             motion:layout_constraintDimensionRatio="1:1"
             motion:layout_constraintStart_toStartOf="@id/firstIV"
             motion:layout_constraintTop_toTopOf="@id/firstIV"
@@ -306,14 +294,14 @@
             android:id="@+id/movingIV"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="-1dp"
-            android:layout_marginTop="-1dp"
             android:elevation="15dp"
             android:scaleX="1.2"
             android:scaleY="1.2"
+            android:layout_marginTop="-1dp"
+            android:layout_marginStart="-1dp"
             motion:layout_constraintDimensionRatio="1:1"
-            motion:layout_constraintStart_toStartOf="@id/firstIV"
-            motion:layout_constraintTop_toTopOf="@id/firstIV"
+            motion:layout_constraintStart_toStartOf="@id/thirdIV"
+            motion:layout_constraintTop_toTopOf="@id/thirdIV"
             motion:layout_constraintWidth_percent="0.18" />
 
     </ConstraintSet>
