@@ -108,7 +108,7 @@
                 android:alpha="0.5" />
             <KeyPosition
                 motion:keyPositionType="pathRelative"
-                motion:percentX=".952"
+                motion:percentX=".954"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="83" />
             <KeyPosition
@@ -214,7 +214,7 @@
                 motion:framePosition="37" />
             <KeyPosition
                 motion:keyPositionType="pathRelative"
-                motion:percentX=".952"
+                motion:percentX=".954"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="64" />
             <KeyAttribute
