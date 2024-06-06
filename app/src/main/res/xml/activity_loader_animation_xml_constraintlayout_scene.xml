@@ -20,7 +20,7 @@
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="59"
                 motion:keyPositionType="deltaRelative"
-                motion:percentX=".964" />
+                motion:percentX=".9652" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
                 motion:percentX=".478"
@@ -268,6 +268,14 @@
                 motion:percentX="0"
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/firstIV"
+                motion:framePosition="5"
+                android:translationX="0dp" />
+            <KeyAttribute
+                motion:motionTarget="@+id/secondIV"
+                motion:framePosition="14"
+                android:translationX="0dp" />
 
         </KeyFrameSet>
     </Transition>
