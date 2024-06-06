@@ -7,7 +7,7 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
         motion:duration="3000"
-        motion:motionInterpolator="linear">
+        motion:motionInterpolator="cubic(0.19,0.41,0.84,0.86)">
         <KeyFrameSet>
 
             <KeyPosition
