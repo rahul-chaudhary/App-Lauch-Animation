@@ -7,7 +7,7 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
         motion:duration="3000"
-        motion:motionInterpolator="cubic(0,0,0.21,0.68)">
+        motion:motionInterpolator="linear">
         <KeyFrameSet>
 
             <KeyPosition
@@ -20,7 +20,7 @@
                 motion:motionTarget="@+id/movingIV"
                 motion:framePosition="59"
                 motion:keyPositionType="deltaRelative"
-                motion:percentX=".97" />
+                motion:percentX=".964" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
                 motion:percentX=".478"
@@ -221,7 +221,7 @@
                 motion:keyPositionType="pathRelative"
                 motion:percentX=".952"
                 motion:motionTarget="@+id/movingIV"
-                motion:framePosition="63" />
+                motion:framePosition="64" />
             <KeyAttribute
                 motion:motionTarget="@+id/secondIV"
                 motion:framePosition="97"
